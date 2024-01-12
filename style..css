@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Yellow);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  --figtree: "Figtree", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.blog-card {
+  width: 300px;
+  min-height: 400px;
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 5%;
+  border: 2px solid var(--black);
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.blog-card:hover{
+    box-shadow: 8px 8px 0px #000000;
+    transition: all 100ms;
+    cursor: pointer;
+    
+}
+
+.blog-img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 5%;
+}
+
+.blog-card .blog-category {
+  background-color: var(--Yellow);
+  display: inline-block;
+  font-size: 10px;
+  font-family: var(--figtree);
+  font-weight: 900;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 16px;
+  color: var(--black);
+}
+.blog-card .publised-date {
+  font-size: 11px;
+  font-family: var(--figtree);
+  font-weight: 700;
+  margin-top: 10px;
+  color: var(--black);
+}
+
+.blog-card .blog-heading {
+  font-size: 18px;
+  font-family: var(--figtree);
+  font-weight: 900;
+  margin: 10px 0;
+  color: var(--black);
+}
+
+.blog-card .blog-text {
+  font-size: 13px;
+  font-family: var(--figtree);
+  font-weight: 400;
+  margin-top: 10px;
+  color: var(--grey);
+  line-height: 1.25rem;
+}
+
+.blog-card .author-group {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.blog-card .author-group .author-img {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.blog-card .author-group .author-name {
+  font-family: var(--figtree);
+  font-size: 10px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
